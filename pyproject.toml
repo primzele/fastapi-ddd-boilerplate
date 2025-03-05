@@ -1,0 +1,26 @@
+[project]
+name = "fastapi-ddd-boilerplate"
+version = "0.1.0"
+description = "Fastapi with Domain Driver Development approach boilerplate"
+authors = [
+    { name = "Primož Jerše", email = "2w12cw76z@mozmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [ "ddd", "fastapi", "boilerplate" ]
+
+dependencies = [
+    "fastapi~=0.115.8",
+    "pydantic~=2.10.6",
+    "uvicorn~=0.34.0 ",
+]
+
+[tool.poetry]
+packages = [
+    { include = "fast_ddd" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
